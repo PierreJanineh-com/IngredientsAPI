@@ -22,6 +22,13 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    //DB
+    implementation("org.postgresql:postgresql:42.5.4")
+    implementation("io.ktor:ktor-server-netty:2.2.4")
+    implementation("org.jetbrains.exposed:exposed-core:0.40.1")
+    implementation("org.jetbrains.exposed:exposed-dao:0.40.1")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.40.1")
 }
 
 tasks.withType<KotlinCompile> {
